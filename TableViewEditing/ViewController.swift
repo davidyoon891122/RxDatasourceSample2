@@ -28,6 +28,22 @@ class ViewController: UIViewController {
         return tableView
     }()
     
+    private var sections = [
+        PersonSection(headerTitle: "First Section", items: [
+            Person(name: "데이비드윤", age: 30),
+            Person(name: "ZㅏZㅏ", age: 30),
+            Person(name: "Tom", age: 25)
+        ]),
+        PersonSection(headerTitle: "Second Section", items: [
+            Person(name: "테스트", age: 16),
+            Person(name: "테스트2", age: 22)
+        ]),
+        PersonSection(headerTitle: "Third Section", items: [
+            Person(name: "테스트3", age: 20),
+            Person(name: "테스트4", age: 50)
+        ])
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
